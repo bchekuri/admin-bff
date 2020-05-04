@@ -1,0 +1,49 @@
+{
+  "app": {
+    "name" : "admin-bff",
+    "description" : "Simple node js backend for front end (BFF)"
+  },
+  "server" : {
+    "port" : "8080",
+    "contextPath" : "/api"
+  },
+  "express" : {
+    "viewPath" : "./views",
+    "staticPath" : "./assets",
+    "viewEngine" : "ejs",
+    "view" : "index.view.ejs"
+  },
+  "auth" : {
+    "secretKey" : "bXlTZWNyZXRLZXk=",
+    "tokenType" : "Bearer",
+    "options" : {
+      "expiresIn" : "3600000",
+      "audience" : "admin-ui",
+      "subject" : "all-access",
+      "issuer" : "admin-bff"
+    }
+  },
+  "logger" : {
+    "app" : {
+      "options" : {
+        "level": "debug",
+        "logName" : "",
+        "logDir" : "",
+        "noStdOut": false,
+        "rotateLogFile": true,
+        "format" : ""
+      }
+    },
+    "access" : {
+      "options" : {
+        "level": "debug",
+        "logName" : "",
+        "logDir" : "",
+        "noStdOut": false,
+        "rotateLogFile": true,
+        "format" : "",
+        "middlewareFormat" : ""
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "logger" : {
+    "app": {
+      "options": {
+        "level": "info",
+        "logName": "",
+        "logDir": "",
+        "noStdOut": false,
+        "rotateLogFile": true,
+        "format": ""
+      }
+    },
+    "access": {
+      "options": {
+        "level": "info",
+        "logName": "",
+        "logDir": "",
+        "noStdOut": false,
+        "rotateLogFile": true,
+        "format": "",
+        "middlewareFormat": ""
+      }
+    }
+  }
+}
